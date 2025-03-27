@@ -1,0 +1,26 @@
+export const studentData = [
+    {
+        Id:'1',
+        Name:'Dinkar',
+        Age:'13',
+        Grade:'A'
+    },
+    {
+        Id:'2',
+        Name:'Surendar',
+        Age:'15',
+        Grade:'B'
+    },
+    {
+        Id:'3',
+        Name:'Lakshman',
+        Age:'14',
+        Grade:'C'
+    },
+    {
+        Id:'4',
+        Name:'Sameer',
+        Age:'12',
+        Grade:'D'
+    }
+]
