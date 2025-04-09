@@ -8,6 +8,8 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import Table from './Table'
 import Counter from './Counter'
 import Toggle from './Toggle'
+import DisplayColorsWithNames from './DisplayColorsWithNames'
+import TrackTextInInput from './TrackTextInInput'
 function App() {
 
   return (
@@ -16,6 +18,8 @@ function App() {
       <Table heading="Student Data Table" /> */}
       <Counter heading="Counter App" />
       <Toggle heading="Toggle App" />
+      <DisplayColorsWithNames />
+      <TrackTextInInput />
     </>
   )
 }
