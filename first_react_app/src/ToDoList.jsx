@@ -9,6 +9,7 @@ const ToDoList = () => {
         gender: "",
         age: 0,
     });
+    const [editIndex, setEditIndex] = React.useState(null);
 
     const handleChange = (e) => {
         setStudent({ ...student, [e.target.name]: e.target.value });
@@ -17,9 +18,24 @@ const ToDoList = () => {
     const handleAdd = (e) => {
         e.preventDefault();
         setStudents([...students, student]);
+        if (editIndex !== null) {
+            const updated = [...students];
+            updated[editIndex] = student;
+            setStudents(updated);
+            setEditIndex(null);
+        } else {
+            setStudents([...students, student]);
+        }
 
         console.log("Add button clicked");
     };
+    // Handle edit
+    const handleEdit = (index) => {
+        setStudent(students[index]);
+        setEditIndex(index);
+    };
+
+    // Handle delete
     const handleDelete = (email) => {
         const deleteData = students.filter(data => data.email !== email)
         setStudents(deleteData);
@@ -63,7 +79,7 @@ const ToDoList = () => {
                     placeholder="Age"
                     onChange={handleChange}
                 />
-                <button type="submit">Add</button>
+                <button type="submit">{editIndex !== null ? "Update" : "Add"}</button>
             </form>
             {students.length > 0 && (
                 <table border={1} cellPadding={5} cellSpacing={0}>
@@ -87,6 +103,8 @@ const ToDoList = () => {
                                     <td>{data.gender}</td>
                                     <td>{data.age}</td>
                                     <td>
+                                        <button onClick={() => handleEdit(index)}>Edit</button>
+
                                         <button onClick={() => handleDelete(data.email)} type="delete">Delete</button>
                                     </td>
                                 </tr>
