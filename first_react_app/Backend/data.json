@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "name": "Margherita Pizza",
+      "price": 8.99,
+      "category": "Pizza",
+      "description": "Classic cheese and tomato pizza with Italian herbs.",
+      "image": "https://images.unsplash.com/photo-1601924582975-4aa3c6f50cdb"
+    },
+    {
+      "id": 2,
+      "name": "Veggie Burger",
+      "price": 6.5,
+      "category": "Burger",
+      "description": "Grilled vegetable patty with fresh lettuce and tomato.",
+      "image": "https://images.unsplash.com/photo-1550547660-d9450f859349"
+    },
+    {
+      "id": 3,
+      "name": "Chicken Biryani",
+      "price": 10.99,
+      "category": "Rice",
+      "description": "Spicy and aromatic Indian chicken rice dish.",
+      "image": "https://images.unsplash.com/photo-1608139743837-68fdd9d729f2"
+    },
+    {
+      "id": 4,
+      "name": "Caesar Salad",
+      "price": 5.75,
+      "category": "Salad",
+      "description": "Fresh romaine lettuce, croutons, and Caesar dressing.",
+      "image": "https://images.unsplash.com/photo-1589308078057-832180d7d80c"
+    },
+    {
+      "id": 5,
+      "name": "Chocolate Lava Cake",
+      "price": 4.99,
+      "category": "Dessert",
+      "description": "Warm chocolate cake with a molten chocolate center.",
+      "image": "https://images.unsplash.com/photo-1599785209707-1aebb2ccf71f"
+    }
+  ]
+  
