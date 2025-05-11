@@ -13,6 +13,9 @@ import App from './Hooks/UserContext/BasicContext/App.jsx'
 import ThemeApp from './Hooks/UserContext/Theming/ThemeApp.jsx'
 import LanguageApp from './Hooks/UserContext/LanguageTranslate/LanguageApp.jsx'
 import AuthApp from './Hooks/AuthContext/AuthApp.jsx'
+import UserApp from './Hooks/UserData/UserApp.jsx'
+import LocalApp from './Hooks/LocalStorage/LocalApp.jsx'
+import AuthProvider from './Hooks/AuthenticationState/AuthProvider.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App /> */}
@@ -26,6 +29,9 @@ createRoot(document.getElementById('root')).render(
     {/* <App /> */}
     {/* <ThemeApp /> */}
     {/* <LanguageApp /> */}
-    <AuthApp />
+    {/* <AuthApp /> */}
+    {/* <UserApp /> */}
+    {/* <LocalApp /> */}
+    <AuthProvider />
   </StrictMode>,
 )
