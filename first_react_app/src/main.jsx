@@ -16,6 +16,8 @@ import AuthApp from './Hooks/AuthContext/AuthApp.jsx'
 import UserApp from './Hooks/UserData/UserApp.jsx'
 import LocalApp from './Hooks/LocalStorage/LocalApp.jsx'
 import AuthProvider from './Hooks/AuthenticationState/AuthProvider.jsx'
+import MainApp from './LanguageTranslationProject/MainApp.jsx'
+import ProjectApp from './LanguageTranslationProject/ProjectApp.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App /> */}
@@ -32,6 +34,8 @@ createRoot(document.getElementById('root')).render(
     {/* <AuthApp /> */}
     {/* <UserApp /> */}
     {/* <LocalApp /> */}
-    <AuthProvider />
+    {/* <AuthProvider /> */}
+    {/* <MainApp /> */}
+    <ProjectApp />
   </StrictMode>,
 )
