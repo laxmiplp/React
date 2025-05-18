@@ -18,6 +18,9 @@ import LocalApp from './Hooks/LocalStorage/LocalApp.jsx'
 import AuthProvider from './Hooks/AuthenticationState/AuthProvider.jsx'
 import MainApp from './LanguageTranslationProject/MainApp.jsx'
 import ProjectApp from './LanguageTranslationProject/ProjectApp.jsx'
+import FocusInput from './Hooks/UseRef/FocusInput.jsx'
+import StopWatch from './Hooks/UseRef/StopWatch.jsx'
+import StoringPrevState from './Hooks/UseRef/StoringPrevState.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App /> */}
@@ -36,6 +39,9 @@ createRoot(document.getElementById('root')).render(
     {/* <LocalApp /> */}
     {/* <AuthProvider /> */}
     {/* <MainApp /> */}
-    <ProjectApp />
+    {/* <ProjectApp /> */}
+    {/* <FocusInput /> */}
+    {/* <StopWatch /> */}
+    <StoringPrevState />
   </StrictMode>,
 )
